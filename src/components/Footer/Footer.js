@@ -16,7 +16,7 @@ const footer = (props) => {
                 <div className="divider"></div>
                 <div className="footer-bottom">
                     <div className="row">
-                        <div className="col-lg-12 text-center"><p>© Bellman All rights reserved.</p></div>
+                        <div className="col-lg-12 text-center"><p>© Bellman All Rights Reserved.</p></div>
                     </div>
                 </div>
             </div>
