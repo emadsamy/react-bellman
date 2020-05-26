@@ -9,7 +9,6 @@ import {
 } from 'reactstrap';
 import Snack from '../../assets/img/banner_snack.png';
 import Blindless from '../../assets/img/blindless.png';
-import Mc from '../../assets/img/mc_banner.jpg';
 
 const items = [
   {
@@ -21,11 +20,6 @@ const items = [
     src: Blindless,
     altText: 'Blindness',
     caption: 'Blindness'
-  },
-  {
-    src: Mc,
-    altText: 'Macdonalds',
-    caption: 'Macdonalds'
   }
 ];
 
