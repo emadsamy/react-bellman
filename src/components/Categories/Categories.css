@@ -1,0 +1,46 @@
+h2 {
+    margin-bottom: 30px
+}
+.categories {
+    padding: 70px 0;
+}
+.categoreis-box {
+    height: 150px;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+                0 -1px 3px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: block;
+}
+.categoreis-box:hover {
+    transform: translateY(-10px)
+}
+.categories-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.categories-image,
+.overlay {
+    height: 100%;
+    width: 100%
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.categories-name {
+    line-height: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFF;
+    letter-spacing: 4px;
+}
