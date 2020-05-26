@@ -1,0 +1,42 @@
+footer {
+    background: #1C243E;
+    padding: 50px 0 20px; 
+}
+footer .socialmedia a {
+    cursor: pointer; 
+}
+footer .socialmedia a i {
+    font-size: 22px;
+    display: inline-block;
+    color: #43495F;
+    margin: 0 10px; 
+}
+footer .socialmedia a i:hover {
+    color: #FFF; 
+}
+footer .links {
+    padding: 20px 0;
+    margin-bottom: 30px; 
+    width: 100%;
+}
+footer .links li a {
+    color: #43495F;
+    font-size: 15px;
+    padding: 0 10px; 
+}
+footer .links li a:hover {
+    color: #FFF; 
+}
+.footer-bottom {
+    padding: 15px 0 0; 
+}
+.footer-bottom p {
+    color: #43495F;
+    font-size: 15px;
+    margin-bottom: 0; 
+}
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #444B60; 
+}

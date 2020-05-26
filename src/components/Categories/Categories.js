@@ -1,60 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Category from './Category';
 import './Categories.css';
 import Clothes from '../../assets/img/clothes.jpg';
 import Cars from '../../assets/img/cars.jpeg';
 import Tablets from '../../assets/img/tablets.jpg';
 import Phones from '../../assets/img/phones.jpeg';
 
-const category = (props) => {
-    return (
-        <div className="categories">
-            <div className="container">
-                <h2>{props.title}</h2>
-                <div className="row">
-                    <div className="col-lg-3">
-                        <Link to="/" className="categoreis-box">
-                            <div className="categories-image" style={{ backgroundImage: `url(${Clothes})` }}>
-                                <div className="overlay">
-                                    <div className="categories-name">Clothes</div>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-lg-3">
-                        <Link to="/" className="categoreis-box">
-                            <div className="categories-image" style={{ backgroundImage: `url(${Cars})` }}>
-                                <div className="overlay">
-                                    <div className="categories-name">Cars</div>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-lg-3">
-                        <Link to="/" className="categoreis-box">
-                            <div className="categories-image" style={{ backgroundImage: `url(${Tablets})` }}>
-                                <div className="overlay">
-                                    <div className="categories-name">Tablets</div>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-
-                    <div className="col-lg-3">
-                        <Link to="/" className="categoreis-box">
-                            <div className="categories-image" style={{ backgroundImage: `url(${Phones})` }}>
-                                <div className="overlay">
-                                    <div className="categories-name">Phones</div>
-                                </div>
-                            </div>
-                        </Link>
+class Categories extends Component {
+    state = {
+        categories : [
+            { id: 1, category_name: "Clothes", category_logo: Clothes },
+            { id: 2, category_name: "Cars", category_logo: Cars },
+            { id: 3, category_name: "Tablets", category_logo: Tablets },
+            { id: 4, category_name: "Phones", category_logo: Phones }
+        ]
+    }
+    render() {
+        return (
+            <div className="categories">
+                <div className="container">
+                    <h2>{this.props.title}</h2>
+                    <div className="row">
+                        {this.state.categories.map(category => {
+                            return <Category 
+                                        category={category.category_name} 
+                                        image={category.category_logo}
+                                    />
+                        })}
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
-export default category;
+export default Categories;

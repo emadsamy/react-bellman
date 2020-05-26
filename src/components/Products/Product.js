@@ -4,7 +4,7 @@ import './Products.css';
 
 const product = (props) => {
     return (
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-sm-6">
             <div className="product">
                 <div className="product-image">
                     <div className="overlay">

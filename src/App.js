@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
 import Categories from './components/Categories/Categories';
 import Products from './components/Products/Products';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Carousel />
         <Categories title="Categories" />
         <Products title="Products" />
+        <Footer />
       </div>
     );
   }
